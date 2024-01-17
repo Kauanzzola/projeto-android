@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor01:#F2E0D0;
+    --cor02:#BF8B5E;
+    --cor03:#8C623E;
+    --cor04:#F2BB77;
+    --cor05:#262014;
+    --font-padrao: Arial, verdana, helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', serif;
+    --font-android: 'android', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor01);
+    font-family: var(--font-padrao);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor05));
+    min-height: 150px;
+    text-align: center;   
+}
+header > h1{
+    color: var(--cor01);
+    padding: 20px;
+    text-shadow: 2px 2px 0 black;
+    font-family: var(--font-destaque);
+}
+header > p{
+    color: var(--cor01);
+    text-shadow: 1px 1px 0 black;
+    font-family: var(--font-padrao);
+    font-size: 1em;
+    max-width: 600px;
+    margin: auto;
+}
+nav{
+    background-color: var(--cor05);
+    box-shadow: 1px 1px 0 black;
+    padding: 10px;
+}
+nav > a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+nav > a:hover{
+    padding: 10px;
+    background-color: var(--cor02);
+}
+main{
+    background-color: var(--cor02);
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+main h1{
+    font-family: var(--font-destaque);
+    text-indent: 10px;
+    line-height: 1.5em;
+    color: white;
+}
+main > h2{
+    font-family: var(--font-android);
+    line-height: 1.5em;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor03), transparent);
+    font-weight: normal;
+}
+main img{
+    width: 100%;
+}
+main p{
+    text-indent: 30px;
+    line-height: 1.5em;
+    padding: 10px;
+    text-align: justify;
+}
